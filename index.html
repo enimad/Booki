@@ -7,26 +7,26 @@
 	<title>Booki</title>
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
+	<script src="https://kit.fontawesome.com/f22e7d7ba2.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
 	<div id="bloc_page">
 	<header>
-		<img id="logo1" src="images/logo/Booki.png" alt="logo Booki">
-		<img id="logo2" src="images/logo/Booki@3x.png" alt="logo Booki">
 		<nav>
-			<div>
-				<p><a href="#section1">Hébergements</a></p>
-				<p><a href="#section2">Activités</a></p>
-			</div>
+		<img id="logo" src="images/logo/Booki@3x.png" alt="logo Booki">
+		<ul>
+			<li><a href="#section1">Hébergements</a></li>
+			<li><a href="#section2">Activités</a></li>
+		</ul>
 		</nav>
 	</header>
 
 	<nav>
-		<div class="test">
-			<p><a href="#section1">Hébergements</a></p>
-			<p><a href="#section2">Activités</a></p>
-		</div>
+		<ul class="mobile-nav">
+			<li><a href="#section1">Hébergements</a></li>
+			<li><a href="#section2">Activités</a></li>
+		</ul>
 	</nav>
 
 	<main>
@@ -36,30 +36,34 @@
 				<p>En plein centre ville ou en pleine nature</p>
 			</div>
 			<div class="recherche">
-				<form>
-					<!-- <img src="logo de localisation??"> -->
-					<fontfamily>LOCALISATION LOGO</fontfamily>
-					<p><h2>Marseille, France</h2></p>
-					<button>Rechercher</button>
+				<form method="post" action="#">
+					<p>
+						<div class="icon-map">
+							<i class="fas fa-map-marker-alt"></i>
+						</div>
+						<input type="text" name="search" id="search" value="Marseille, France">
+						<button class="button-txt">Rechercher</button>
+						<button class="button-icon"><span class="fas fa-search"></span></button>
+					</p>
 				</form>
 			</div>
 			<div class="filtres">
-				<h2>Filtres</h2>
+				<p>Filtres</p>
 				<div>
-					<!-- <img src="logo billet??"> -->
-					<h2>Economique</h2>
+					<button class="economic-icon"><span class="fas fa-money-bill-wave"></span></button>
+					<p>Economique</p>
 				</div>
 				<div>
-					<!-- <img src="logo billet??"> -->
-					<h2>Familial</h2>
+					<button class="family-icon"><span class="fas fa-child"></span></button>
+					<p>Familial</p>
 				</div>
 				<div>
-					<!-- <img src="logo billet??"> -->
-					<h2>Romantique</h2>
+					<button class="romantic-icon"><span class="fas fa-heart"></span></button>
+					<p>Romantique</p>
 				</div>
 				<div>
-					<!-- <img src="logo billet??"> -->
-					<h2>Animaux autorisés</h2>
+					<button class="animal-icon"><span class="fas fa-dog"></span></button>
+					<p>Animaux autorisés</p>
 				</div>
 			</div>
 			<div>
