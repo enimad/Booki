@@ -260,7 +260,7 @@ form {
 	background-color: white;
 	cursor: pointer;
 	border: 4px solid white;
-	border-radius: 30px;
+	border-radius: 10px;
 	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 	transition: 0.3s;
 }
@@ -273,14 +273,14 @@ form {
 	height: 100px;
 	position: relative;
 	overflow: hidden;
-	border-top-left-radius: 30px;
-	border-top-right-radius: 30px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
 }
 
 .cards1 .card .card-img img {
 	width: 100%;
 	position: absolute;
-	top: 50%;
+	top: 20%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
@@ -290,14 +290,85 @@ form {
 }
 
 .cards1 .card h3 {
-	font-size: 15px;
+	font-size: 17px;
 }
 
-.card .stars {
+.cards1 .stars {
 	color: #0065FC;
 }
 
-.card .grey-star {
+.cards1 .grey-star {
+	color: #d1d1d1;
+}
+
+.populaires .titre-populaires {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 20px;
+}
+
+.cards2 {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.cards2 .card {
+	display: flex;
+	width: 370px;
+	height: 150px;
+	margin: 20px;
+	background-color: white;
+	cursor: pointer;
+	border: 4px solid white;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	transition: 0.3s;
+}
+
+.cards2 .card:hover{
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.cards2 .card .card-img {
+	width: 40%;
+	height: 150px;
+	position: relative;
+	overflow: hidden;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+	margin-right: 10px;
+}
+
+.cards2 .card .card-img img {
+	position: absolute;
+	height: 150%;
+	top: 60%;
+	left: 50%;
+	transform: translate(-50%, -65%);
+}
+
+.cards2 .card .card-content {
+	width: 60%;
+	padding: 0 20px;
+}
+
+.cards2 .card h3 {
+	font-size: 17px;
+	margin-bottom: -5px;
+}
+
+.cards2 p {
+	margin-bottom: 40px;
+}
+
+.cards2 .stars {
+	color: #0065FC;
+	font-size: 12px;
+}
+
+.cards2 .grey-star {
 	color: #d1d1d1;
 }
 
