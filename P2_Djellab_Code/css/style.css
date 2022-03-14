@@ -125,7 +125,7 @@ form {
 	border-radius: 0 10px 10px 0;
 }
 
-.button-icon {
+#button-icon {
 	display: none;
 }
 
@@ -222,7 +222,7 @@ form {
 .midcontent {
 	display: flex;
 	flex-wrap: wrap;
-	gap: 40px;
+	gap: 55px;
 	margin-bottom: 50px;
 }
 
@@ -236,8 +236,8 @@ form {
 	justify-content: space-between;
 	background-color: #F2F2F2;
 	border-radius: 25px;
-	padding: 10px 20px;
-	min-width: 60%;
+	padding: 10px 30px;
+	min-width: 65%;
 	flex: 1;
 }
 
@@ -247,7 +247,7 @@ form {
 	background-color: #F2F2F2;
 	border-radius: 25px;
 	padding: 10px 20px;
-	min-width: 30%;
+	min-width: 25%;
 	flex: 1;
 }
 
@@ -257,9 +257,8 @@ form {
 
 .cards1 {
 	display: flex;
-	flex-direction: row;
 	flex-wrap: wrap;
-	justify-content: center;
+	justify-content: space-between;
 }
 
 .cards1 a {
@@ -270,13 +269,13 @@ form {
 .cards1 .card {
 	display: flex;
 	flex-direction: column;
-	width: 250px;
-	height: 200px;
+	width: 290px;
+	height: 240px;
 	margin: 20px;
 	background-color: white;
 	cursor: pointer;
 	border: 4px solid white;
-	border-radius: 10px;
+	border-radius: 25px;
 	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 	transition: 0.3s;
 	flex: 0 0 auto;
@@ -287,17 +286,17 @@ form {
 }
 
 .cards1 .card .card-img {
-	height: 100px;
+	height: 160px;
 	position: relative;
 	overflow: hidden;
-	border-top-left-radius: 10px;
-	border-top-right-radius: 10px;
+	border-top-left-radius: 25px;
+	border-top-right-radius: 25px;
 }
 
 .cards1 .card .card-img img {
 	width: 100%;
 	position: absolute;
-	top: 20%;
+	top: 40%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
@@ -339,17 +338,17 @@ form {
 
 .cards2 .card {
 	display: flex;
-	width: 370px;
-	height: 150px;
+	width: 390px;
+	height: 160px;
 	margin: 20px;
 	background-color: white;
 	cursor: pointer;
 	border: 4px solid white;
-	border-radius: 10px;
+	border-radius: 25px;
 	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 	transition: 0.3s;
 	flex: 0 1 auto;
-    min-width: 300px;
+	min-width: 300px;
 }
 
 .cards2 .card:hover{
@@ -358,11 +357,11 @@ form {
 
 .cards2 .card .card-img {
 	width: 40%;
-	height: 150px;
+	height: 160px;
 	position: relative;
 	overflow: hidden;
-	border-top-left-radius: 10px;
-	border-bottom-left-radius: 10px;
+	border-top-left-radius: 25px;
+	border-bottom-left-radius: 25px;
 	margin-right: 10px;
 }
 
@@ -518,7 +517,7 @@ footer {
 	padding-bottom: 20px;
 }
 
-@media all and (min-width: 769px) and (max-width: 992px)
+@media all and (min-width: 769px) and (max-width: 991px)
 {
 
 /* Propriétés CSS pour les tablettes*/
@@ -560,8 +559,18 @@ footer {
 		padding-left: 0;
 	}
 
-	.button-icon {
+	#button-icon {
 		display: none;
+	}
+
+	/* Mise en forme de la partie hébergements */
+
+	.cards1{
+		justify-content: center;
+	}
+
+	.cards1 .card {
+		margin: 15px 15px;
 	}
 
 	/* Mise en forme de la partie activités */
@@ -673,7 +682,7 @@ footer {
 		width: 40px;
 	}
 
-	.button-icon {
+	.button-txt {
 		color: white;
 		border: 1px solid;
 		border-color: #0065FC;
@@ -689,7 +698,11 @@ footer {
 		right: 20px;
 	}
 
-	.button-txt {
+	#button-icon {
+		display: block;
+	}
+
+	.text {
 		display: none;
 	}
 
@@ -730,8 +743,9 @@ footer {
 		overflow: hidden;
 		flex: 1 1 auto;
 		min-width: 240px;
-		max-width: 360px;
+		max-width: 340px;
 		margin: 20px 0;
+		height: 200px;
 	}
 
 	.midcontent {
@@ -742,8 +756,8 @@ footer {
 	.cards2 .card {
 		flex: 1 1 auto;
 		min-width: 240px;
-		max-width: 360px;
-		margin: 20px 0;
+		max-width: 340px;
+		margin: 20px 5px;
 	}
 
 	.cards2 .card .card-content {
@@ -788,7 +802,7 @@ footer {
 		flex-direction: column;
 		width: 100%;
 		max-width: 350px;
-		height: 160px;
+		height: 180px;
 		background-color: white;
 		cursor: pointer;
 		border-radius: 20px;
@@ -804,7 +818,7 @@ footer {
 		flex-direction: column;
 		width: 100%;
 		max-width: 350px;
-		height: 160px;
+		height: 180px;
 		background-color: white;
 		cursor: pointer;
 		border-radius: 20px;
